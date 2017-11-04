@@ -1,0 +1,13 @@
+<p>Dear Admin,</p>
+<p>{{ user.username }} has requested to become a "QUIZ Creator"</p>
+<p>
+Their email-ID is {{ user.email }}</p>
+
+<p>To confirm their request, please click on the following link: <a href="{{ url_for('superuser.confirm', token=token, _external=True) }}">click here</a>.</p>
+
+<p>To decline their request permanently, please click on the following link: <a href="{{ url_for('superuser.decline', token=token, _external=True) }}">click here</a>.</p>
+
+
+<p>Sincerely,</p>
+<p>The Ganache Team</p>
+<p><small>Note: replies to this email address are not monitored.</small></p>

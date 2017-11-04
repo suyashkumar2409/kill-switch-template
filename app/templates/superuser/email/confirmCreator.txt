@@ -1,0 +1,16 @@
+Dear Admin,
+
+{{ user.username }} has requested to become a "QUIZ Creator"
+
+Their email-ID is {{ user.email }}
+
+To confirm their request, please click on the following link:
+{{ url_for('superuser.confirm', token=token, _external=True) }}
+
+
+To decline their request permanently, please click on the following link:
+{{ url_for('superuser.decline', token=token, _external=True) }}
+
+Sincerely,
+The Ganache Team
+Note: replies to this email address are not monitored.
